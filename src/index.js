@@ -1,13 +1,34 @@
 import React from 'react';
+import {
+  BrowserRouter, Route, Switch
+} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HomePage from './containeur/HomePage/HomePage';
+import CodeHttpPage from './containeur/CodeHttpPage/CodeHttpPage';
+import Error404Page from './containeur/404Page/404Page';
+import LostPage from './containeur/LostPage/LostPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Switch>
+          <Route path="/lost">
+            <LostPage />
+          </Route>
+          <Route path="/$:id">
+            <CodeHttpPage />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/*">
+            <Error404Page />
+          </Route>
+    </Switch>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

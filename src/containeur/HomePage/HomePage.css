@@ -1,0 +1,45 @@
+.home_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.home_container.animation_start
+{
+    opacity: 1;
+}
+.home_container .container{
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 2s ease-in-out;
+}
+
+.animation_end .container{
+    height: 100%;
+    opacity: 1;
+}
+.home_container.animation_end
+{
+    opacity: 1;
+}
+
+.excuse_card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.loader{
+    margin-bottom: 2vh;
+}
