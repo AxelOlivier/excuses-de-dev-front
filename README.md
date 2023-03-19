@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Installation
+
+You will need NPM installed on your computer
+
+Clone the project : https://github.com/AxelOlivier/excuses-de-dev-front.git
+
+```bash
+  git clone https://github.com/AxelOlivier/excuses-de-dev-front.git
+```
+
+Install the dependencies
+
+```bash
+  npm i
+```
+
+Then you can start the project
+
+```bash
+  npm start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
