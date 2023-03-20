@@ -33,7 +33,6 @@ const LostPage = () => {
       <img 
       src="https://media1.giphy.com/media/c20UV66B7zCWA/giphy.gif?cid=ecf05e473qwfi15egk6riegmgl8tx67evoevrfu1oewvczf4&rid=giphy.gif&ct=g" 
       alt="YOU ARE LOST" />
-      <Loader></Loader>
     </div>
   );
 };
